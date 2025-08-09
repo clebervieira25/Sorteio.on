@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio.on login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sorteio.on</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+        </nav>
+        <label for="opcao" class="opcao">
+            <select id="opcao">
+                <option value="login">&#128100Login</option>
+            </select>
+
+    </header>
+
+    <main>
+        <h2>Bem Vindo</h2>
+        <p>Entre com sua conta por aqaui</p>
+        
+        <label>E-mail
+        <input type="email" id="email" placeholder="✉️	">
+        </label>
+
+        <label> Senha
+            <input type="password" id="password" placeholder="&#128274">
+        </label>
+
+        <button onclick="fazerLogin()">&rarr;Fazer Login</button>
+
+        <a href="recuperarsenha.html" onclick="recuperarSenha()">Esqueci minha senha?</a>
+        <a href="cadastro.html" onclick="cadastro()">ainda não tenho cadastro</a>
+    </main>
+
+    <footer>
+         <h2>Sorteio.on</h2>
+         <p>&copy; 2025 Sorteio.on - Todos os direitos reservados</p>
+         <p>Desenvolvido por Cléber Vieira</p>
+    
+    </footer>
+        
+    
+</body>
+<script src="./script.js/login.js"></script>
+</html>

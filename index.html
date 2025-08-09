@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorteio online</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="header-titulo" >Sorteio.on</h1>
+        <nav>
+            <a href="index.html" id="nav-inicio">Início</a>
+            <a href="comofunciona.html" id="nav-como">Como Funciona</a>
+            <a href="./login.html" id="nav-login">Login</a>
+        </nav>
+        <label for="opcoes" class="seletor-idioma">
+            <img src="./imagens/brazil-3001462_1280.webp">
+            <select id="opcoes">
+                <option value="PT">PT</option>
+                <option value="EN">EN</option>
+                <option value="ES">ES</option>
+            </select>
+        </label>
+    </header>
+
+    <main>
+        <h2 id="titulo-sorteio"> &numero; Sorteador de Números</h2>
+
+        <label><span id="label-quantidade">sortear</span>
+            <input id="quantidade" type="number" placeholder="quantidade" min="1" value="1">
+        </label>
+
+        <label><span id="label-entre">número entre</span>
+            <input id="minimo" type="number" placeholder="Mínimo" min="1">
+        </label>
+
+        <label><span id="label-e">e</span>
+            <input id="maximo" type="number" placeholder="Máximo">
+        </label>
+
+        <label>
+            <input type="checkbox" id="relogio">
+            <span id="label-relogio">contagem Regressiva</span>
+        </label>
+
+        <label>
+            <input type="checkbox" id="naoRepetir" name="naoRepetir">
+            <span id="label-nao-repetir">Não repetir Número</span>
+        </label>
+
+        <button onclick="gerarNumero()" id="btn-gerar">Gerar Número</button>
+
+        <label><span id="label-resultado">Número Sorteado</span>
+            <input id="resultado" placeholder="número sorteado" readonly>
+        </label>
+        <p id="contador"></p>
+    </main>
+    <footer>
+        <p id="roddape1">&copy; 2025 Sorteio.on - Todos os direitos reservados</p>
+        <p id="rodape2">Desenvolvido por Cléber Vieira</p>
+        <p id="rodape3">Versão 1.0</p>
+
+    </footer>
+
+
+</body>
+<script src="./script.js/index.js"></script>
+
+</html>
